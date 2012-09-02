@@ -1,0 +1,34 @@
+block b-article {
+
+    tag: 'article'
+
+    elem header, tag: 'h1'
+
+    elem list, tag: 'dl'
+
+    elem item {
+        tag: '',
+        content: [
+            {
+                tag: 'dt',
+                content: this.ctx.name
+            },
+            {
+                tag: 'dd',
+                content: this.ctx.value
+            }
+        ]
+    }
+
+    content: [
+        {
+            elem: 'header',
+            content: this.ctx.header
+        },
+        {
+            elem: 'list',
+            content: this.ctx.content
+        }
+    ]
+
+}
