@@ -3,7 +3,7 @@
     title: 'Pseudo link',
     head: [
         { elem: 'css', url: '_anketa.css'},
-        { elem: 'css', url: '_anketa', ie: true },
+        // { elem: 'css', url: '_anketa', ie: true },
         { block: 'i-jquery', elem: 'core' },
         { elem: 'js', url: '_anketa.js' }
     ],
@@ -25,6 +25,7 @@
                 content: [
                     {
                         elem: 'pre',
+                        mix: [{ block: 'b-details', elem: 'code' }],
                         content: "\
                             /** \n \
                              * Создает экземпляр Машины \n \
@@ -179,6 +180,7 @@
                     },
                     {
                         elem: 'pre',
+                        mix: [{ block: 'b-details', elem: 'code' }],
                         content: " \
                             #!/usr/bin/env bash \n \
                             \n \
@@ -237,6 +239,7 @@
                     },
                     {
                         elem: 'pre',
+                        mix: [{ block: 'b-details', elem: 'code' }],
                         content: "\ \n \
                             #!/usr/bin/env python \n \
                             \n \
@@ -268,6 +271,7 @@
                     },
                     {
                         elem: 'pre',
+                        mix: [{ block: 'b-details', elem: 'code' }],
                         content: ' \
                             #!/usr/bin/env perl \n \
                             \n \

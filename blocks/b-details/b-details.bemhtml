@@ -1,6 +1,7 @@
 block b-details {
 
     tag: 'details'
+    js: true
 
     elem summary, tag: 'summary'
 
