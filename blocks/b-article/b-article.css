@@ -1,7 +1,27 @@
+.b-article
+{
+    margin-left: 5em;
+}
+
+.b-article__list
+{
+    padding-left: 2em;
+}
+
+.b-article__term
+{
+    font-style: italic;
+
+    display: list-item;
+
+    margin-top: 1em;
+
+    /* list-style-type: disc; */
+}
+
 .b-article__code
 {
     font: 130% Monaco, Consolas, "Courier New", monospace;
 
     margin: 0 0 0.8em;
 }
-

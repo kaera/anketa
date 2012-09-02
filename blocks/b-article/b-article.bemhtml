@@ -3,18 +3,19 @@ block b-article {
     tag: 'article'
 
     elem header, tag: 'h1'
-
     elem list, tag: 'dl'
+    elem term, tag: 'dt'
+    elem desc, tag: 'dd'
 
     elem item {
         tag: '',
         content: [
             {
-                tag: 'dt',
-                content: this.ctx.name
+                elem: 'term',
+                content: this.ctx.term
             },
             {
-                tag: 'dd',
+                elem: 'desc',
                 content: this.ctx.content
             }
         ]
