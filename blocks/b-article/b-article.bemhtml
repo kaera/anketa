@@ -15,7 +15,7 @@ block b-article {
             },
             {
                 tag: 'dd',
-                content: this.ctx.value
+                content: this.ctx.content
             }
         ]
     }
