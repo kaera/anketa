@@ -122,62 +122,59 @@
                     name: 'Предположим, что мы представляем автосалон по продаже японских и немецких автомобилей. У нас есть базовые классы и примеры их использования. Допишите недостающий код.',
                     content: {
                         block: 'b-details',
-                        summary: 'Автосалон',
+                        summary: 'Решение',
                         content: {
-                            block: 'b-text',
-                            content: [
-                                {
-                                    elem: 'pre',
-                                    mix: [{ block: 'b-details', elem: 'code' }],
-                                    content: '{{ auto.js }}'
-                                }
-                            ]
+                            block: 'b-article',
+                            elem: 'code',
+                            language: 'javascript',
+                            content: '{{ auto.js }}'
                         }
                     }
                 },
                 {
                     elem: 'item',
                     name: 'Найдите все текстовые файлы (*.txt), в имени которых содержится «yandex», а в содержимом — «школа разработки интерфейсов».',
+                    content: {
+                        elem: 'code',
+                        language: 'bash',
+                        content: "grep -rl 'школа разработки интерфейсов' */*yandex*.txt"
+                    }
                 },
                 {
                     elem: 'item',
                     name: 'Дана программа, реализованная одновременно на Bash, Python и Perl. Программа принимает произвольное количество аргументов и печатает их количество. Нужно добавить опцию -v для verbose-режима, в котором дополнительно выводится значение каждого из аргументов.',
-                    content: {
-                        block: 'b-details',
-                        summary: 'Скриптовая задача',
-                        content: {
-                            block: 'b-text',
-                            content: [
-                                {
-                                    elem: 'h3',
-                                    content: 'Bash'
-                                },
-                                {
-                                    elem: 'pre',
-                                    mix: [{ block: 'b-details', elem: 'code' }],
-                                    content: '{{ args.sh }}'
-                                },
-                                {
-                                    elem: 'h3',
-                                    content: 'Python'
-                                },
-                                {
-                                    elem: 'pre',
-                                    mix: [{ block: 'b-details', elem: 'code' }],
-                                    content: '{{ args.py }}'
-                                },
-                                {
-                                    elem: 'h3',
-                                    content: 'Perl'
-                                },
-                                {
-                                    elem: 'pre',
-                                    mix: [{ block: 'b-details', elem: 'code' }],
-                                    content: '{{ args.pl }}'
-                                }
-                            ]
+                    content: [
+                        {
+                            block: 'b-details',
+                            summary: 'Решение на bash',
+                            content: {
+                                block: 'b-article',
+                                elem: 'code',
+                                language: 'bash',
+                                content: '{{ args.sh }}'
+                            }
+                        },
+                        {
+                            block: 'b-details',
+                            summary: 'Решение на python',
+                            content: {
+                                block: 'b-article',
+                                elem: 'code',
+                                language: 'python',
+                                content: '{{ args.py }}'
+                            }
+                        },
+                        {
+                            block: 'b-details',
+                            summary: 'Решение на perl',
+                            content: {
+                                block: 'b-article',
+                                elem: 'code',
+                                language: 'perl',
+                                content: '{{ args.pl }}'
+                            }
                         }
-                    }
+                    ]
                 },
                 {
                     elem: 'item',

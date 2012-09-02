@@ -20,6 +20,15 @@ block b-article {
         ]
     }
 
+    elem code {
+        tag: 'pre',
+        content: {
+            tag: 'code',
+            cls: this.ctx.language,
+            content: this.ctx.content
+        }
+    }
+
     content: [
         {
             elem: 'header',
