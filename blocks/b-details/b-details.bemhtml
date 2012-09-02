@@ -1,0 +1,16 @@
+block b-details {
+
+    tag: 'details'
+
+    elem summary, tag: 'summary'
+
+    content: [
+        {
+            elem: 'summary',
+            content: this.ctx.summary,
+            id: 'name'
+        },
+        this.ctx.content
+    ]
+
+}
