@@ -23,3 +23,15 @@
 
     margin-left: 1em;
 }
+
+@media print {
+    .b-article
+    {
+        margin: 0;
+    }
+
+    .b-article__code
+    {
+        margin-left: 0;
+    }
+}
