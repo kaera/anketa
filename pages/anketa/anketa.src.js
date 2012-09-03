@@ -1,6 +1,6 @@
 ({
     block: 'b-page',
-    title: 'Pseudo link',
+    title: 'Анкета',
     head: [
         { elem: 'css', url: '_anketa.css'},
         // { elem: 'css', url: '_anketa', ie: true },
