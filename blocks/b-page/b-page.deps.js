@@ -5,5 +5,10 @@
             elem: 'dom',
             mods: {'init': 'auto'}
         }
+    ],
+    shouldDeps: [
+        {
+            block: 'i-html5shiv'
+        }
     ]
 })
