@@ -21,7 +21,11 @@
 {
     font: 130% Monaco, Consolas, "Courier New", monospace;
 
+    overflow: auto;
+
     margin-left: 1em;
+
+    background-color: #f0f0f0;
 }
 
 @media print {
@@ -32,6 +36,8 @@
 
     .b-article__code
     {
+        display: block !important;
+
         margin-left: 0;
     }
 }

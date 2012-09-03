@@ -1,5 +1,12 @@
+.b-details
+{
+    display: block;
+}
+
 .b-details__summary
 {
+    display: block;
+
     margin: 0.5em 0;
 
     cursor: pointer;
