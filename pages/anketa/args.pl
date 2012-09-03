@@ -19,15 +19,15 @@ my $count = 0;
 my $arg;
 
 foreach $arg (@ARGV) {
-    print($arg . "\\n") if $verbose;
+    print($arg . "\n") if $verbose;
     $count++;
 }
 
 if($message ne "") {
-    print($message . "\\n");
+    print($message . "\n");
 }
 
-print($count . "\\n");
+print($count . "\n");
 
 __END__
 

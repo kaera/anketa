@@ -48,9 +48,10 @@ var yandex = new CarDealer('Яндекс.Авто');
  * @param {...Car} var_args
  */
 CarDealer.prototype.add = function() {
-    for (var i = 0, l = arguments.length; i < l; i++) {
-        this.cars.push(arguments[i]);
-    };
+    for (var i = 0, l = arguments.length; i < l; i++)
+        if (arguments[i] instanceof Car)
+            this.cars.push(arguments[i]);
+
     return this
 }
 yandex
@@ -65,9 +66,9 @@ yandex
 CarDealer.prototype.setPrice = function(car, price) {
     (this.catalog) || (this.catalog = {});
     // Стоимость машины может быть задана в двух валютах: йена и евро.
-    if (price[0] == '€' || price[0] == '¥') {
+    if (price[0] == '€' || price[0] == '¥')
         this.catalog[car] = price;
-    };
+
     return this
 }
 yandex
